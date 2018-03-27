@@ -5,8 +5,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class Response {
-
+public class XKCDComic {
 
     private String month;
     private int num;
@@ -19,9 +18,6 @@ public class Response {
     private String title;
     private String day;
     private String link;
-
-
-
 
 }
 

@@ -28,7 +28,7 @@ public class SimpleXKCDClient {
 
     OkHttpClient httpClient = new OkHttpClient();
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String args[]) {
         SimpleXKCDClient simpleXKCDClient = new SimpleXKCDClient();
         XKCDComic comic = simpleXKCDClient.getComic();
         System.err.println("Got " + comic.getTitle());
@@ -84,7 +84,7 @@ public class SimpleXKCDClient {
     }
 
     public XKCDComic getComic() {
-        
+
         if (flags.getHolidaySeason().isEnabled()) {
             REST_URI = "https://xkcd.com/521/info.0.json";
         }

@@ -1,8 +1,11 @@
-package io.rollout;
+package io.rollout.example;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * POJO for an XKCD comic
+ */
 @Data
 @NoArgsConstructor
 public class XKCDComic {

@@ -1,19 +1,20 @@
-package io.rollout;
+package io.rollout.example;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
+/**
+ * Only one of these will pass
+ */
 public class TestSimpleXKCDClient {
 
     private static SimpleXKCDClient simpleXKCDClient;
 
     @BeforeClass
-    public static void setupTest() throws Exception {
+    public static void setupTest() {
         simpleXKCDClient = new SimpleXKCDClient();
-
-
     }
 
     @Test
